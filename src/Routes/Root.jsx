@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import MenuBar from "../Components/MenuBar";
 import Somoi from "../Components/Somoi";
+import Footer from "../Components/Footer";
 
 
 const Root = () => {
@@ -9,6 +10,7 @@ const Root = () => {
             <MenuBar></MenuBar>
             <Somoi></Somoi>
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
