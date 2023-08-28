@@ -6,7 +6,7 @@ import NewsComponent from "./NewsComponent";
 const NewsContent = () => {
     const [data,setData]=useState(null)
     useEffect(()=>{
-            fetch("http://localhost:6001/news")
+            fetch("https://travel-news-server.vercel.app/news")
             .then(res=>res.json())
             .then(data=>{
           

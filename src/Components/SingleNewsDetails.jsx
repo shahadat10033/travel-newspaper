@@ -6,7 +6,7 @@ const SingleNewsDetails = () => {
     const [data,setData]=useState(null)
     const {id}=useParams()
     useEffect(()=>{
-fetch(`http://localhost:6001/singleNews/${id}`)
+fetch(`https://travel-news-server.vercel.app/singleNews/${id}`)
 .then(res=>res.json())
 .then(data=>{setData(data)
 

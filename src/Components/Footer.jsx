@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
 
@@ -7,13 +9,13 @@ const Footer = () => {
         <div>
             
          
-            <div className="text-center relative">
+            <Link to ="/"><div className="text-center relative">
     <a className="btn btn-ghost normal-case text-2xl font-bold"> ভ্রমণ
     <span className="text-red-600"> নিউজ ২৪
     </span></a><small className=" font-bold absolute top-9 right-5" style={{fontSize:"8px"}}> সময় থাকতে ঘুরে আসুন
     </small>
     
-  </div>
+  </div></Link>
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </div> 
         <div>
