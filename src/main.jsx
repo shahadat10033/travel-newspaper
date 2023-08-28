@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './Routes/Home';
 import ErrorPage from './Routes/ErrorPage';
+import SingleNewsDetails from './Components/SingleNewsDetails';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>,
+      },
+      {
+        path: "/details/:id",
+        element:<SingleNewsDetails></SingleNewsDetails>
       },
     ],
   },
